@@ -1,7 +1,8 @@
 set rnu
+set scrolloff=15
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
 
-if exists('g:vscode')
-    set scrolloff=15
-else
-    set scrolloff=15
-endif
+colorscheme desert
