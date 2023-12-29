@@ -9,3 +9,7 @@ colorscheme desert
 
 let mapleader = " "
 nnoremap <leader>pv :Vex<CR> 
+
+"Plugins
+call plug#begin()
+call plug#end()
