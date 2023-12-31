@@ -11,10 +11,10 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
+        'rebelot/kanagawa.nvim',
+        as = 'kanagawa',
         config = function()
-            vim.cmd('colorscheme rose-pine')
+            vim.cmd('colorscheme kanagawa')
         end
     })
 
@@ -70,4 +70,9 @@ return require('packer').startup(function(use)
     use("github/copilot.vim")
     use("eandrju/cellular-automaton.nvim")
     use("laytan/cloak.nvim")
+    -- vim status line
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
